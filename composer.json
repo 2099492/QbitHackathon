@@ -1,0 +1,6 @@
+{
+    "name": "laurensvanderbilt/dev",
+    "require": {
+        "larapack/dd": "^1.1"
+    }
+}
