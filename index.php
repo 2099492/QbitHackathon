@@ -6,11 +6,16 @@ $xml_array = json_decode(json_encode($xml), true);
 foreach ($xml_array['wetgeving']['wet-besluit']['wettekst']['boek'] as $wetboeken){
     foreach($wetboeken['titeldeel'] as $titeldeel) {
         foreach ($titeldeel['artikel'] as $wet) {
-//            dd($wet['kop']['nr']);
-            echo '<h1>Artikel: ' . $wet['kop']['nr'] . '</h1>';
+            if ($wet['kop']['nr']) {
+                echo '<h1>Artikel: ' . $wet['kop']['nr'] . '</h1>';
+            }
             foreach ($wet['lid'] as $data) {
-                echo '<h2>' . $data['lidnr'] . '</h2>';
-                echo '<p>' . $data['al'] . '</p>';
+                if ($data['lidnr']) {
+                    echo '<h2>' . $data['lidnr'] . '</h2>';
+                }
+                if ($data['al']) {
+                    echo '<p>' . $data['al'] . '</p>';
+                }
             }
         }
     }

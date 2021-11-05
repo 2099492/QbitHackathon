@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '9e5d60baa6579dde0f9d2268c4c1fd5959f333db',
     'name' => 'laurensvanderbilt/dev',
   ),
   'versions' => 
@@ -22,12 +22,12 @@
     ),
     'laurensvanderbilt/dev' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '9e5d60baa6579dde0f9d2268c4c1fd5959f333db',
     ),
     'symfony/polyfill-mbstring' => 
     array (
